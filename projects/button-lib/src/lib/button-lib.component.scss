@@ -1,0 +1,21 @@
+@import "../_shared/scss/variables";
+@import "./button-style-solid";
+@import "./button-style-dotted";
+@import "./button-size";
+@import "./button-shape";
+@import "./button-icon";
+
+:host {
+  box-sizing: border-box;
+  display: inline-block;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+
+  @include generate-solid-buttons;
+  @include generate-dotted-buttons;
+  @include generate-sized-buttons;
+  @include generate-shaped-buttons;
+  @include generate-buttons-icon;
+}

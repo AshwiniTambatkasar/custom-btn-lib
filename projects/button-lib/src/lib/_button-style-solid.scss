@@ -1,0 +1,52 @@
+@mixin generate-button-solid($color) {
+  background: $color;
+
+  &[disabled] {
+    background: $color;
+    box-shadow: none;
+    cursor: not-allowed;
+    color: $darkDefault;
+  }
+}
+
+@mixin generate-solid-buttons {
+  &.button-style-solid {
+    &.button-color-default {
+      @include generate-button-solid($default);
+    }
+    &.button-color-primary {
+      @include generate-button-solid($primary);
+      &.rest-effect {
+        pointer-events: none;
+      }
+      &.hover-effect {
+        &:hover:not([disabled]) {
+          background: #394892;
+        }
+      }
+
+      &.pressed-effect {
+        &:active {
+          background: #2d3872;
+        }
+      }
+    }
+    &.button-color-secondary {
+      @include generate-button-solid($secondary);
+      &.rest-effect {
+        pointer-events: none;
+      }
+      &.hover-effect {
+        &:hover:not([disabled]) {
+          background: #d9dcec;
+        }
+      }
+
+      &.pressed-effect {
+        &:active {
+          background: #c5cae3;
+        }
+      }
+    }
+  }
+}

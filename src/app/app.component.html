@@ -1,0 +1,205 @@
+
+
+<div class="main-section">
+  <div class="page-header">
+      <div class="logo-section"></div>
+      <div class="header-meta">
+        Basic Components &#8226; Button
+      </div>
+  </div>
+  <div class="note">
+    <div class="title">
+      Button
+    </div>
+    <div class="subtitle">
+      Used for CTA's
+    </div>
+  </div>
+  
+  <div class="component-section">
+    <div class="filled-text"> 
+      Filled button
+    </div>
+    <div class="filled-button-header">
+        <span class="col col-1">
+          Rest
+        </span>
+        <span class="col col-2">
+          Hover
+        </span>
+        <span class="col col-3">
+          Pressed
+        </span>
+        <span class="col col-4">
+          Disabled
+        </span>
+        <span class="col col-5">
+          Focus
+        </span>
+    </div>
+      <div class="filled-button-section">
+        <div class="button-wrapper">
+          <lib-button-lib  [color]="enum.ButtonColor.PRIMARY"
+          [size]="enum.ButtonSize.LARGE"
+          [style]="enum.ButtonStyle.SOLID"
+          [shape]="enum.ButtonShape.PILLED"
+          [effect]="enum.ButtonEffect.REST"
+          ><span ButtonIcon></span>Button</lib-button-lib>
+      
+          <lib-button-lib 
+    [color]="enum.ButtonColor.PRIMARY"
+    [size]="enum.ButtonSize.LARGE"
+    [style]="enum.ButtonStyle.SOLID"
+    [shape]="enum.ButtonShape.PILLED"
+    [effect]="enum.ButtonEffect.HOVER"
+    ><span ButtonIcon></span>Button</lib-button-lib>
+      
+          <lib-button-lib 
+    [color]="enum.ButtonColor.PRIMARY"
+    [size]="enum.ButtonSize.LARGE"
+    [style]="enum.ButtonStyle.SOLID"
+    [shape]="enum.ButtonShape.PILLED"
+    [effect]="enum.ButtonEffect.PRESSED"
+    ><span ButtonIcon></span>Button</lib-button-lib>
+       
+          <!-- <lib-button-lib 
+    [color]="ButtonColor.DEFAULT"
+    [size]="ButtonSize.LARGE"
+    [style]="ButtonStyle.SOLID"
+    [shape]="ButtonShape.PILLED"
+    disabled="true"><span ButtonIcon></span>Button</lib-button-lib>
+      
+          <lib-button-lib 
+    [color]="ButtonColor.PRIMARY"
+    [size]="ButtonSize.LARGE"
+    [style]="ButtonStyle.DOTTED"
+    [shape]="ButtonShape.PILLED"
+    ><span ButtonIcon></span>Button</lib-button-lib>
+      </div>
+      <!-- row 2  -->
+      <div class="button-wrapper">
+        <lib-button-lib  [color]="ButtonColor.SECONDARY"
+        [size]="ButtonSize.LARGE"
+        [style]="ButtonStyle.SOLID"
+        [shape]="ButtonShape.PILLED"
+        [effect]="ButtonEffect.REST"
+        ><span ButtonIcon>Button</span></lib-button-lib>
+     
+        <lib-button-lib 
+  [color]="ButtonColor.SECONDARY"
+  [size]="ButtonSize.LARGE"
+  [style]="ButtonStyle.SOLID"
+  [shape]="ButtonShape.PILLED"
+  [effect]="ButtonEffect.HOVER"
+  ><span ButtonIcon>Button</span></lib-button-lib>
+     
+  <lib-button-lib 
+  [color]="ButtonColor.SECONDARY"
+  [size]="ButtonSize.LARGE"
+  [style]="ButtonStyle.SOLID"
+  [shape]="ButtonShape.PILLED"
+  [effect]="ButtonEffect.PRESSED"
+  ><span ButtonIcon>Button</span></lib-button-lib>
+     
+  <lib-button-lib 
+  [color]="ButtonColor.DEFAULT"
+  [size]="ButtonSize.LARGE"
+  [style]="ButtonStyle.SOLID"
+  [shape]="ButtonShape.PILLED" 
+  disabled="true"><span ButtonIcon>Button</span></lib-button-lib>
+     
+  <lib-button-lib 
+  [color]="ButtonColor.SECONDARY"
+  [size]="ButtonSize.LARGE"
+  [style]="ButtonStyle.DOTTED"
+  [shape]="ButtonShape.PILLED"
+  [effect]="ButtonEffect.REST"
+  ><span ButtonIcon>Button</span></lib-button-lib>
+    </div>
+
+     <!-- row 3  -->
+    <div class="button-wrapper small">
+      <lib-button-lib  [color]="ButtonColor.PRIMARY"
+      [size]="ButtonSize.MEDIUM"
+      [style]="ButtonStyle.SOLID"
+      [shape]="ButtonShape.PILLED"
+      [effect]="ButtonEffect.REST"
+      ><span ButtonIcon></span>Button</lib-button-lib>
+  
+      <lib-button-lib 
+[color]="ButtonColor.PRIMARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.HOVER"
+><span ButtonIcon></span>Button</lib-button-lib>
+  
+      <lib-button-lib 
+[color]="ButtonColor.PRIMARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.PRESSED"
+><span ButtonIcon></span>Button</lib-button-lib>
+   
+      <lib-button-lib 
+[color]="ButtonColor.DEFAULT"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED"
+disabled="true"><span ButtonIcon></span>Button</lib-button-lib>
+  
+      <lib-button-lib 
+[color]="ButtonColor.PRIMARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.DOTTED"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.REST"
+><span ButtonIcon></span>Button</lib-button-lib>
+  </div>
+
+   <!-- row 4  -->
+   <div class="button-wrapper small">
+    <lib-button-lib  [color]="ButtonColor.SECONDARY"
+    [size]="ButtonSize.MEDIUM"
+    [style]="ButtonStyle.SOLID"
+    [shape]="ButtonShape.PILLED"
+    [effect]="ButtonEffect.REST"
+    ><span ButtonIcon>Button</span></lib-button-lib>
+ 
+    <lib-button-lib 
+[color]="ButtonColor.SECONDARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.HOVER"
+><span ButtonIcon>Button</span></lib-button-lib>
+ 
+    <lib-button-lib 
+[color]="ButtonColor.SECONDARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.PRESSED"
+><span ButtonIcon>Button</span></lib-button-lib>
+ 
+    <lib-button-lib 
+[color]="ButtonColor.DEFAULT"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.SOLID"
+[shape]="ButtonShape.PILLED" 
+disabled="true"><span ButtonIcon>Button</span></lib-button-lib>
+ 
+    <lib-button-lib 
+[color]="ButtonColor.SECONDARY"
+[size]="ButtonSize.MEDIUM"
+[style]="ButtonStyle.DOTTED"
+[shape]="ButtonShape.PILLED"
+[effect]="ButtonEffect.REST"
+><span ButtonIcon>Button</span></lib-button-lib>
+</div> -->
+      
+     
+      </div>
+  </div>
+</div>

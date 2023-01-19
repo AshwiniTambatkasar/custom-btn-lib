@@ -1,0 +1,19 @@
+@mixin generate-sized-buttons {
+  &.button-size-medium,
+  &.button-size-large {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: "Manrope";
+    font-style: normal;
+    align-items: center;
+  }
+
+  &.button-size-medium {
+    padding: 8px 16px;
+  }
+
+  &.button-size-large {
+    padding: 8px 24px;
+  }
+}

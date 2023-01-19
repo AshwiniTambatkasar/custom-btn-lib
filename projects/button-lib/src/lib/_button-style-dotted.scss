@@ -1,0 +1,23 @@
+@mixin generate-dotted-button-bordered($color) {
+  background: $color;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+
+  &:focus {
+    outline: 2px dotted $outlineColor;
+    outline-offset: 2px;
+  }
+}
+
+@mixin generate-dotted-buttons {
+  &.button-style-dotted {
+    &.button-color-default {
+      @include generate-dotted-button-bordered($default);
+    }
+    &.button-color-primary {
+      @include generate-dotted-button-bordered($primary);
+    }
+    &.button-color-secondary {
+      @include generate-dotted-button-bordered($secondary);
+    }
+  }
+}
